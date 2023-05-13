@@ -1,0 +1,294 @@
+<!--the content of this code was gotten from multi site like html-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+
+        <!--Bootstrap cdn-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Font awesome icons link-->
+        <script src="https://kit.fontawesome.com/418a17df72.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <style>
+        
+        </style>
+   </head>
+    <body>
+        <header>
+            <div class="website-header">
+                <img src="img/logo.jpg" alt="logo">
+                <h1>RobG News</h1>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-rss"></i>   
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-md ">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/Politics.html">POLITICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/world.html">WORLD</a>
+                        </li> 
+		                 <li class="nav-item">
+                            <a class="nav-link" href="website/business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/travel.html">TRAVEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/technology.html">TECHNOLOGY</a>
+                        </li> 
+		                <li class="nav-item">
+                             <a class="nav-link" href="website/sport.html">SPORT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/cars.html">CARS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="website/viedos.html">VIDEOS</a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav> 
+            <div class="breaking-news-section">
+                <span id="btext">Breaking News</span>
+                <!--marquee tag is used for creating scrollable text or image-->
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <a href="https://www.cbc.ca/news/canada/ottawa/larga-baffin-appeal-hunt-club-assocation-1.6625301" class="breaking-news">
+                        <p class="bntime">23 Oct 2022</p> Larga Baffin to fight zoning appeal of Inuit health-care facility
+                    </a>
+                    <a href="https://www.cbc.ca/news/canada/ottawa/montreal-road-reopens-1.6626310" class="breaking-news">
+                        <p class="bntime">23 Oct 2022</p> Vanier celebrates 'massive milestone' as Montreal Road reopens
+                    </a>
+                    <a href="https://www.cbc.ca/news/canada/saskatoon/noel-harder-inside-story-1.6625679" class="breaking-news">
+                        <p class="bntime">23 Oct 2022</p> A police informant central to a massive Sask. organized crime bust has died. Here's the inside story
+                    </a>
+                </marquee>   
+            </div>
+        </header>
+        <main>
+            <article id="popular-news">
+                <div id="featured">
+                    <h2>FEATURED</h2>
+                    <!--cusor and caption from bootstap-->
+                    <section class="popular-news-carousel">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./css/main.css" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tour the World 's Biggest SuperYacht</h5>
+                                        <p>23 Oct 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="img/carousel2.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Repurposed Boeing 747 makes slow journey to become Netherlands hotel attraction</h5>
+                                        <p>23 Oct 2022</p>
+                                     </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/carousel3.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Soctland Best castle</h5>
+                                        <p>23 Oct 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                              
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </section>                     
+                </div>
+                <div id="latest">
+                    <h2>LATEST</h2>
+                    <section class="news">
+                        <div class="news-container">
+                            <img src="img/carousel1.jpg">
+                            <p class="carousel-text">This floating entertainment hub</p>
+                        </div>
+                    </section>
+                    <section class="news">
+                        <div class="news-container">
+                            <img src="img/carousel2.jpg">
+                            <p class="carousel-text">Repurposed Boeing</p>
+                        </div>       
+                    </section>
+                </div>
+                
+                <div id="our-picks">
+                    <h2>OUR PICKS</h2>
+                    <section class="news">
+                        <div class="news-container">
+                            <img src="img/carousel3.jpg">
+                            <p class="carousel-text">Edinburgh considering tourist tax</p>
+                        </div>
+                    </section>
+                    <section class="news">
+                        <div class="news-container">
+                            <img src="img/carousel1.jpg">
+                            <p class="carousel-text">This floating entertainment hub</p>
+                        </div>
+                    </section>
+                    
+                </div>
+            </article>
+            <section class="more-news">
+                <div class="news-section">
+                    <article class="world">
+                        <h2>WORLD</h2>
+                        <img src="img/world1.jpg">
+                        <!--this part of the new was justing from CBC-->
+                        <h3>Brampton takes step to address 'unprecedented' election resignations 24 hours before polls open</h3>
+                        <p>The City of Brampton is short election workers by 'at least 150' with less than a day before the 2022 municipal election, but the city says it's taking steps to address the shortages.</p>
+                        <p>In an email obtained by CBC Toronto, Brampton city clerk Peter Fay sent a mass request for staff who could work the election. The request went out at 10:25 a.m. on Sunday, less than 24 hours before polls open.</p>
+                        <p>"The City Election Project is experiencing an unprecedented number of public and staff election worker resignations and training no-shows," according to Fay's email.</p>
+                        <p>In it, he requests "at least 150" staff to do various day-of-election jobs and notes that some staff not working in critical front-line positions may be retasked for election support.</p>
+                        <p>Contacted by CBC News, the city confirms it's hiring more staff.</p>
+                        <p>"Each election, some staffing shortages are experienced on the morning of voting day," Stogdill wrote in an email to CBC Toronto.</p>
+                        <p>"In anticipation of this, and to prepare for contingencies, the city clerk and chief administrative officer this morning (October 23) jointly issued a request for internal staff to be on standby to help deliver tomorrow's election, if needed."</p>
+                        <a href="https://www.cbc.ca/news/canada/toronto/brampton-ward-election-2022-1.6603035">The next city councillor to claim this vacant seat could tip the scales in Brampton's split city hall</a>
+                        <p>According to Stogdill, "there has been an overwhelmingly positive response," and the city is well prepared to deliver the election.</p>
+                        <p>Stogdill said all voting locations have adequate staffing and election workers are trained and ready to serve Brampton voters.</p>
+                    </article>
+                    <article class="sport">
+                        <h2>SPORT</h2>
+                        <img src="img/sport1.jpg">
+                        <!--this news was gotten from cbc news-->
+                        <h3>How pandemic bike lanes made some Canadian cities more accessible</h3>
+                        <P>Several Canadian cities set up temporary bike lanes to accommodate the pandemic cycling boom, and biking enthusiasts want the changes to stay.</P>
+                        <P>According to a <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/200810/dq200810a-eng.htm">survey</a> from Statistics Canada, more Canadians are now biking or walking to work than using public transit. After the pandemic began last year, many viewed cycling as a safer alternative to being crammed together with others in small spaces and increasing the potential risk of contracting COVID-19</P>
+                        <P><a href="https://findingspress.org/article/19069-the-impact-of-covid-19-cycling-infrastructure-on-low-stress-cycling-accessibility-a-case-study-in-the-city-of-toronto">Research</a> from the University of Toronto published last month suggests the pandemic bike lanes improved access to jobs, parks and stores. Cycling advocates say the changes should be made permanent and expanded further — similar to what is being done in Europe. </P>
+                        <P>According to cycling advocacy organization Vélo Canada Bikes, several cities, including Moncton, Kitchener, Ottawa, Montreal, Vancouver, Victoria, Toronto, Calgary and Winnipeg have extended their bike lane networks since the pandemic began. </P>
+                        <P>In Montreal, Société du parc Jean-Drapeau, which runs the park area that includes Île Sainte-Hélène and Île Notre-Dame, opened a new, year-round cycling route this winter between the Jacques-Cartier and Concorde Bridges. </P>
+                        <a href="https://www.cbc.ca/news/canada/toronto/activeto-report-2021-1.5951691">ActiveTO poised to return in 2021, may include bike lanes and patios on Yonge Street</a>
+                        <P>In Calgary, 13 kilometres of roadway with vehicle traffic was temporarily closed to provide space for cyclists and pedestrians to use during the pandemic. </P>
+                        <P>"These benefits are all temporary, and that's why we have an ongoing push to keep ActiveTO, retain the routes beyond 2021 and keep expanding," said Keagan Gartz, executive director of bike lobby group Cycle Toronto.</P>
+                        For more information
+                        <a href="https://www.cbc.ca/news/science/pandemic-bike-lanes-canada-1.5951863">For more information
+                        </a>
+                    </article>
+                </div>
+
+                <aside>
+                    <h4>RECENT</h4>
+                    <div class="recent-news">
+                        <img src="img/article1.jpg">
+                            <p>More power for CX-30</p>
+                    </div>
+
+                    <div class="recent-news">
+                        <img src="img/article2.jpg">
+                            <p>Toyota Highlander loses the V6</p>
+                    </div>
+
+                    <div class="recent-news">
+                        <img src="img/article3.jpg">
+                        <p>Lotus Evita Emerson Fittipaldi</p>
+                    </div>
+
+                    <div class="recent-news">
+                        <img src="img/aside2.jpg">
+                            <p>2018 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                    </div>
+                    
+                    <div class="recent-news">
+                        <img src="img/aside3.jpg"> 
+                            <p>How pandemic bike lanes made some Canadian cities more accessible</p>
+                    </div>
+
+                    <div class="recent-news">
+                        <img src="img/aside4.jpg">
+                            <p>Christiano Ronaldo return to Man Utd training after serving Erik ten Hag punishment</p>
+                    </div>
+
+                    <div class="recent-news">
+                        <img src="img/aside5.jpg">
+                            <p>Messi and Neymar's Psg contract details revealed</p>
+                    </div>                    
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <div class="social-links">
+                <section class="about">
+                    <h2>About</h2>
+                    <p>To contact us or to apply for job click the link below</p>
+                    <a href="website/Contact.html">Form link</a>
+                    <div class="social-icons-footer">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fas fa-rss-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fas fa-rss-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </section>
+                <section class="Instagram">
+                    <h2>Instagram</h2>
+                    <img src="img/aside2.jpg">
+                    <img src="img/aside3.jpg">
+                    <img src="img/aside4.jpg">
+                    <img src="img/aside5.jpg">
+                    <img src="img/aside2.jpg">
+                    <img src="img/aside3.jpg">
+                    <img src="img/aside4.jpg">
+                    <img src="img/aside5.jpg">
+                    <img src="img/aside2.jpg">
+                    <button type="button" class="footer-buttons">View on Instagram</button>
+                </section>
+                <section class="Subscribe">
+                    <h2>Subscribe for News Today</h2>
+                    <p>Enter your email address to subscribe to this blog and receive notifications of new posts by email</p>
+                    <input type="email" placeholder="Email Address">
+					<button type="button" class="footer-buttons">Subscribe</button>
+                </section>
+            </div>
+
+            <div class="copyright">Copyright © 2022 News Today . Designed by Guillaume Robert</div>
+        </footer>
+        <!--Bootstrap cdn-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>   
+</html>
